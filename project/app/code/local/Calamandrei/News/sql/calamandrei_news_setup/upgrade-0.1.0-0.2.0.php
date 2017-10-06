@@ -9,7 +9,7 @@
  * MySql installer
  *
  * @author Lorenzo Calamandrei <lorenzo.calamandrei@thinkopen.it>
- * @version 0.1.0
+ * @version 0.2.0
  * @package Cms
  */
 
@@ -17,9 +17,9 @@
 $installer = $this;
 $installer->startSetup();
 
-$tableCategory = $installer->getConnection()->newTable($installer->getTable('calamandrei_news/category'));
-$tableCategory->addColumn(
-    'category_id',
+$tableStory = $installer->getConnection()->newTable($installer->getTable('calamandrei_news/story'));
+$tableStory->addColumn(
+    'story_id',
     Varien_Db_Ddl_Table::TYPE_INTEGER,
     null,
     array(
@@ -27,41 +27,47 @@ $tableCategory->addColumn(
         'identity' => true,
         'nullable' => false
     ),
-    'Category ID'
+    'Story ID'
 )->addColumn(
-    'code',
+    'title',
     Varien_Db_Ddl_Table::TYPE_TEXT,
-    64,
+    256,
     array('nullable' => false),
-    'Category Code'
+    'Story Title'
 )->addColumn(
-    'name',
+    'content',
     Varien_Db_Ddl_Table::TYPE_TEXT,
-    64,
+    null,
     array('nullable' => false),
-    'Category Name'
+    'Story Content'
 )->addColumn(
     'status',
     Varien_Db_Ddl_Table::TYPE_BOOLEAN,
     null,
     array('nullable' => false),
-    'Category Status'
+    'Story Status'
+)->addColumn(
+    'category_id',
+    Varien_Db_Ddl_Table::TYPE_INTEGER,
+    null,
+    array('nullable' => true),
+    'category_id'
 )->addColumn(
     'created_at',
     Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
     null,
     array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT),
-    'Category Created at'
+    'Story Created at'
 )->addColumn(
     'updated_at',
     Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
     null,
     array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT_UPDATE),
-    'Category Updated at'
+    'Story Updated at'
 );
 
 //create table
-$installer->getConnection()->createTable($tableCategory);
+$installer->getConnection()->createTable($tableStory);
 
 $installer->endSetup();
 
