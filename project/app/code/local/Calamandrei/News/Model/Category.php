@@ -41,8 +41,8 @@ class Calamandrei_News_Model_Category extends Mage_Core_Model_Abstract
      */
     protected function _beforeSave()
     {
-        return parent::_beforeSave();
-        $this->setUpdatedAt(Mage::getSingleton('core/date')->getGmt());
+        parent::_beforeSave();
+        $this->setUpdatedAt(Mage::getSingleton('core/date')->gmtDate());
         return $this;
     }
 
