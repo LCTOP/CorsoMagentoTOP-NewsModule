@@ -1,0 +1,69 @@
+<?php
+/**
+ * Calamandrei_News
+ */
+
+/**
+ * Calamandrei News Installer
+ *
+ * MySql installer
+ *
+ * @author Lorenzo Calamandrei <lorenzo.calamandrei@thinkopen.it>
+ * @version 0.1.0
+ * @package Cms
+ */
+
+/** @var Mage_Core_Model_Resource_Setup $installer */
+$installer = $this;
+$installer->startSetup();
+
+$tableCategory = $installer->getConnection()->newTable($installer->getTable('calamandrei_news/category'));
+$tableCategory->addColumn(
+    'category_id',
+    Varien_Db_Ddl_Table::TYPE_INTEGER,
+    null,
+    array(
+        'primary' => true,
+        'identity' => true,
+        'nullable' => false
+    ),
+    'Category ID'
+)->addColumn(
+    'code',
+    Varien_Db_Ddl_Table::TYPE_TEXT,
+    64,
+    array('nullable' => false),
+    'Category Code'
+)->addColumn(
+    'name',
+    Varien_Db_Ddl_Table::TYPE_TEXT,
+    64,
+    array('nullable' => false),
+    'Category Name'
+)->addColumn(
+    'status',
+    Varien_Db_Ddl_Table::TYPE_BOOLEAN,
+    null,
+    array('nullable' => false),
+    'Category Status'
+)->addColumn(
+    'created_at',
+    Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
+    null,
+    array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT),
+    'Category Created at'
+)->addColumn(
+    'updated_at',
+    Varien_Db_Ddl_Table::TYPE_TIMESTAMP,
+    null,
+    array('default' => Varien_Db_Ddl_Table::TIMESTAMP_INIT_UPDATE),
+    'Category Updated at'
+);
+
+//TODO prepare table for calamandrei_news_story
+
+//create table
+$installer->getConnection()->createTable($tableCategory);
+
+$installer->endSetup();
+

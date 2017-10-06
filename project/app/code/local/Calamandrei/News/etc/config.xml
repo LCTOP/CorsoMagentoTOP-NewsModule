@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <Calamandrei_News>
+            <version>0.1.0</version>
+        </Calamandrei_News>
+    </modules>
+    <global>
+        <blocks>
+            <calamandrei_news>
+                <class>Calamandrei_News_Block</class>
+            </calamandrei_news>
+        </blocks>
+        <helpers>
+            <calamandrei_news>
+                <class>Calamandrei_News_Helper</class>
+            </calamandrei_news>
+        </helpers>
+        <models>
+            <calamandrei_news>
+                <class>Calamandrei_News_Model</class>
+                <resourceModel>calamandrei_news_resource</resourceModel>
+            </calamandrei_news>
+            <calamandrei_news_resource>
+                <class>Calamandrei_News_Model_Resource</class>
+                <entities>
+                    <category>
+                        <table>calamandrei_news_category</table>
+                    </category>
+                    <story>
+                        <table>calamandrei_news_story</table>
+                    </story>
+                </entities>
+            </calamandrei_news_resource>
+        </models>
+        <resources>
+            <calamandrei_news_setup>
+                <setup>
+                    <module>Calamandrei_News</module>
+                </setup>
+            </calamandrei_news_setup>
+        </resources>
+    </global>
+    <frontend>
+
+    </frontend>
+    <admin>
+
+    </admin>
+    <adminhtml>
+
+    </adminhtml>
+    <default>
+
+    </default>
+</config>
