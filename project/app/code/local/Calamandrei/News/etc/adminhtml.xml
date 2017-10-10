@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <config>
+    <menu>
+        <cms>
+            <children>
+                <calamandrei_news translate="title">
+                    <title>News</title>
+                    <sort_order>90</sort_order>
+                    <children>
+                        <calamandrei_news_category translate="title">
+                            <title>Categories</title>
+                            <sort_order>10</sort_order>
+                            <action>calamandrei_news/adminhtml_category</action>
+                        </calamandrei_news_category>
+                        <calamandrei_news_story translate="title">
+                            <title>Stories</title>
+                            <sort_order>20</sort_order>
+                            <action>calamandrei_news/adminhtml_story</action>
+                        </calamandrei_news_story>
+                    </children>
+                </calamandrei_news>
+            </children>
+        </cms>
+    </menu>
     <acl>
         <resources>
             <all>
@@ -7,6 +29,14 @@
             </all>
             <admin>
                 <children>
+                    <cms>
+                        <children>
+                            <calamandrei_news translate="title">
+                                <title>Calamandrei News</title>
+                                <sort_order>90</sort_order>
+                            </calamandrei_news>
+                        </children>
+                    </cms>
                     <system>
                         <children>
                             <config>

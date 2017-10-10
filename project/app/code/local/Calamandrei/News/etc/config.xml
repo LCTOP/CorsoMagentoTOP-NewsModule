@@ -53,7 +53,15 @@
         </translate>
     </frontend>
     <admin>
-
+        <routers>
+            <calamandrei_news>
+                <use>admin</use>
+                <args>
+                    <module>Calamandrei_News</module>
+                    <frontName>calamandrei_news</frontName>
+                </args>
+            </calamandrei_news>
+        </routers>
     </admin>
     <adminhtml>
         <translate>
