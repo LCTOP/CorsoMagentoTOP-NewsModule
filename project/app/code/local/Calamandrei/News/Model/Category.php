@@ -27,6 +27,18 @@ class Calamandrei_News_Model_Category extends Mage_Core_Model_Abstract
 {
 
     /**
+     * $_eventPrefix
+     * @var string $_eventPrefix Prefix of the event (override of Mage_Core_Model_Abstract var $_eventPrefix)
+     */
+    protected $_eventPrefix = 'calamandrei_news_category';
+
+    /**
+     * $_eventObject
+     * @var string $_eventObject Prefix of the object (only in the observer)
+     */
+    protected $_eventObject = 'category';
+
+    /**
      * _construct
      */
     protected function _construct()
