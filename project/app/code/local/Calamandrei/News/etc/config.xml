@@ -42,13 +42,29 @@
         </resources>
     </global>
     <frontend>
-
+        <translate>
+            <modules>
+                <calamandrei_news>
+                    <files>
+                        <default>Calamandrei_News.csv</default>
+                    </files>
+                </calamandrei_news>
+            </modules>
+        </translate>
     </frontend>
     <admin>
 
     </admin>
     <adminhtml>
-
+        <translate>
+            <modules>
+                <calamandrei_news>
+                    <files>
+                        <default>Calamandrei_News.csv</default>
+                    </files>
+                </calamandrei_news>
+            </modules>
+        </translate>
     </adminhtml>
     <default>
 
