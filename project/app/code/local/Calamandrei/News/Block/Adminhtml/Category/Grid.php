@@ -79,13 +79,13 @@ class Calamandrei_News_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Bloc
                 'header' => $this->__('Status'),
                 'width' => 100,
                 'type' => 'options',
-                'options' => Mage::getModel('calamandrei_news/source_status')->toOptionArray(),
+                'options' => Mage::getModel('calamandrei_news/source_status')->toGridArray(),
                 'renderer' => 'calamandrei_news/adminhtml_category_grid_renderer_status'
             )
         );
 
         $this->addColumn(
-            'action',
+            'actions',
             array(
                 'header' => $this->__('Actions'),
                 'width' => 100,

@@ -32,5 +32,18 @@ class Calamandrei_News_Model_Source_Status
         );
     }
 
+    /**
+     * toGridArray
+     * @return array
+     */
+    public function toGridArray()
+    {
+        $array = array();
+        foreach ($this->toOptionArray() as $option) {
+            $array[$option['value']] = $option['label'];
+        }
+        return $array;
+    }
+
 }
 
