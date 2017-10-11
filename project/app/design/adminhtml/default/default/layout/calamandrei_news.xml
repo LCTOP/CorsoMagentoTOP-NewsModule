@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <calamandrei_news_adminhtml_category_index>
+        <reference name="content">
+            <block type="calamandrei_news/adminhtml_category" name="calamandrei_news.adminhmtl.category.grid" />
+        </reference>
+    </calamandrei_news_adminhtml_category_index>
+</layout>

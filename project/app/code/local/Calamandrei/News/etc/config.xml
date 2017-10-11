@@ -64,6 +64,13 @@
         </routers>
     </admin>
     <adminhtml>
+        <layout>
+            <updates>
+                <calamandrei_news>
+                    <file>calamandrei_news.xml</file>
+                </calamandrei_news>
+            </updates>
+        </layout>
         <translate>
             <modules>
                 <calamandrei_news>

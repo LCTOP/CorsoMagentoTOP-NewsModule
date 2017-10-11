@@ -22,7 +22,8 @@ class Calamandrei_News_Adminhtml_CategoryController extends Mage_Adminhtml_Contr
      */
     public function indexAction()
     {
-        echo 'eccomi category'; die;
+        $this->loadLayout();
+        $this->renderLayout();
     }
 
     /**
