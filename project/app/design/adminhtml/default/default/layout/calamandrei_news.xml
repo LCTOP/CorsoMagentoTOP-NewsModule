@@ -5,4 +5,13 @@
             <block type="calamandrei_news/adminhtml_category" name="calamandrei_news.adminhmtl.category.grid" />
         </reference>
     </calamandrei_news_adminhtml_category_index>
+    <calamandrei_news_adminhtml_category_edit>
+        <reference name="left">
+            <block type="calamandrei_news/adminhtml_category_edit_tabs"
+                   name="calamandrei_news.adminhmtl.category.edit.tabs"/>
+        </reference>
+        <reference name="content">
+            <block type="calamandrei_news/adminhtml_category_edit" name="calamandrei_news.adminhmtl.category.edit" />
+        </reference>
+    </calamandrei_news_adminhtml_category_edit>
 </layout>
