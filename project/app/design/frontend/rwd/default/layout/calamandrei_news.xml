@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <calamandrei_news_list_index>
+        <reference name="content">
+            <block type="calamandrei_news/story" name="calamandrei_news.story" template="calamandrei_news/list.phtml" />
+        </reference>
+    </calamandrei_news_list_index>
+</layout>

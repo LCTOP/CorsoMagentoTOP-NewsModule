@@ -51,6 +51,22 @@
                 </calamandrei_news>
             </modules>
         </translate>
+        <routers>
+            <calamandrei_news>
+                <use>standard</use>
+                <args>
+                    <module>Calamandrei_News</module>
+                    <frontName>stories</frontName>
+                </args>
+            </calamandrei_news>
+        </routers>
+        <layout>
+            <updates>
+                <calamandrei_news>
+                    <file>calamandrei_news.xml</file>
+                </calamandrei_news>
+            </updates>
+        </layout>
     </frontend>
     <admin>
         <routers>

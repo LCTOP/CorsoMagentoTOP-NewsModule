@@ -114,5 +114,12 @@ class Calamandrei_News_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Bloc
         return parent::_prepareColumns();
     }
 
+    public function getRowUrl($item)
+    {
+        return $this->getUrl('*/*/edit', array(
+            'category_id' => $this->getRequest()->getParam('category_id')
+        ));
+    }
+
 }
 
