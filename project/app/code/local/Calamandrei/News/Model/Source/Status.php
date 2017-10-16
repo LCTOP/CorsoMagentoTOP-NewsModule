@@ -46,4 +46,3 @@ class Calamandrei_News_Model_Source_Status
     }
 
 }
-

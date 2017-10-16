@@ -37,4 +37,3 @@ class Calamandrei_News_Block_Adminhtml_Category_Edit extends Mage_Adminhtml_Bloc
         return $this->__('Category Details');
     }
 }
-

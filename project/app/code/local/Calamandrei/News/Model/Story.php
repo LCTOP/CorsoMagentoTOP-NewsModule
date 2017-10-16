@@ -87,4 +87,3 @@ class Calamandrei_News_Model_story extends Mage_Core_Model_Abstract
     }
 
 }
-

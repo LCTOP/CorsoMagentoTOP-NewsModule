@@ -59,4 +59,3 @@ class Calamandrei_News_Model_Category extends Mage_Core_Model_Abstract
     }
 
 }
-

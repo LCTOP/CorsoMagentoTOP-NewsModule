@@ -25,4 +25,3 @@ class Calamandrei_News_Model_Resource_Story_Collection extends Mage_Core_Model_R
     }
 
 }
-

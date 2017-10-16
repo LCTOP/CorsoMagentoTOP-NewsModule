@@ -35,4 +35,3 @@ class Calamandrei_News_Adminhtml_StoryController extends Mage_Adminhtml_Controll
     }
 
 }
-

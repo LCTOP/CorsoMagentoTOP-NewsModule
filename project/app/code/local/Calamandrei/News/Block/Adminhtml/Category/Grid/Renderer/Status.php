@@ -34,4 +34,3 @@ class Calamandrei_News_Block_Adminhtml_Category_Grid_Renderer_Status extends Mag
     }
 
 }
-

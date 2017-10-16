@@ -70,4 +70,3 @@ $tableStory->addColumn(
 $installer->getConnection()->createTable($tableStory);
 
 $installer->endSetup();
-

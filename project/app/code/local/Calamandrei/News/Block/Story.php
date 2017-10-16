@@ -31,4 +31,3 @@ class Calamandrei_News_Block_Story extends Mage_Core_Block_Template
             ->addFieldToFilter('category_id', $this->getRequest()->getParam('category'));
     }
 }
-

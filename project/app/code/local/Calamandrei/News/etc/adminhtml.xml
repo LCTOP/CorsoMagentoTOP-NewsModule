@@ -21,6 +21,17 @@
                 </calamandrei_news>
             </children>
         </cms>
+        <new_my_tab translate="title">
+            <title>News new</title>
+            <sort_order>1000</sort_order>
+            <children>
+                <new_news translate="title">
+                    <title>Newwww Category</title>
+                    <sort_order>10</sort_order>
+                    <action>calamandrei_news/adminhtml_category</action>
+                </new_news>
+            </children>
+        </new_my_tab>
     </menu>
     <acl>
         <resources>
@@ -29,6 +40,14 @@
             </all>
             <admin>
                 <children>
+                    <new_my_tab>
+                        <children>
+                            <new_news translate="title">
+                                <title>Newwww Category</title>
+                                <sort_order>10</sort_order>
+                            </new_news>
+                        </children>
+                    </new_my_tab>
                     <cms>
                         <children>
                             <calamandrei_news translate="title">

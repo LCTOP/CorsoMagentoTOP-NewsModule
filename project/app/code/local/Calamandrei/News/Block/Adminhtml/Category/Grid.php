@@ -122,4 +122,3 @@ class Calamandrei_News_Block_Adminhtml_Category_Grid extends Mage_Adminhtml_Bloc
     }
 
 }
-

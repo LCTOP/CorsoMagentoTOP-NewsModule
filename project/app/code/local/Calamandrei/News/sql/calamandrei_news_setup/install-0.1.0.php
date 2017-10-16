@@ -64,4 +64,3 @@ $tableCategory->addColumn(
 $installer->getConnection()->createTable($tableCategory);
 
 $installer->endSetup();
-

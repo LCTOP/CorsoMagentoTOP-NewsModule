@@ -28,4 +28,3 @@ class Calamandrei_News_Block_Adminhtml_Category extends Mage_Adminhtml_Block_Wid
     }
 
 }
-

@@ -96,4 +96,3 @@ class Calamandrei_News_Block_Adminhtml_Category_Edit_Form extends Mage_Adminhtml
     }
 
 }
-
